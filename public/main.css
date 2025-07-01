@@ -10,8 +10,23 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-bottom: 4em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     background: rgba(113,105,101,0.4);
+    color: #ead7cb;
+}
+
+/* headerの「そだてる」「ひろば」のcss */
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav a {
     color: #ead7cb;
 }
 
@@ -21,7 +36,7 @@ a {
 
 div {
     text-align:center;
-    margin: 40px;
+    margin: 20px;
 }
 
 img {
@@ -33,18 +48,22 @@ img {
 footer {
     padding: 20px;
     text-align: center;
+    margin-top: 4em;
     font-size: .9rem;
     color: #777;
 }
 
+/* 「どのごはんをあげる？」のcss */
 .question{
     font-size: 1.5em;
 }
 
+/* 「成長！」のcss */
 .adult{
     font-size: 2em;
 }
 
+/* 「きいろのごはん」などのcss */
 .btn {
     display: inline-block;
     padding: 2px 8px;
@@ -54,4 +73,24 @@ footer {
     color: #716965;
     font-size: .9rem;
     cursor: pointer;
+}
+
+/* ひろばのボックス設定 */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.collection-item {
+    width: calc(50% - 20px); /* 2分割 */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.collection-img {
+    max-width: 100%;
+    height: auto;
 }

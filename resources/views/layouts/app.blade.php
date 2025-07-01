@@ -9,6 +9,12 @@
 <body>
     <header>
         <h1>育成game</h1>
+        <nav>
+            <ul>
+                <li><a href="/">そだてる</a></li>
+                <li><a href="/collections">ひろば</a></li>
+            </ul>
+        </nav>
     </header>
 
     @yield('content')

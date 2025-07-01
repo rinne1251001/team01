@@ -2,11 +2,13 @@
 
 @section('content')
     <main class="container">
-        @foreach ($collections as $collection)
-        <article class="collection-item">
-            <div><img src="{{ asset('images/' . ($images[$collection->id] ?? 'default.jpg')) }}" alt="{{ $collection->name }}"></div>
-            <div class="collection-name">{{ $collection->name }}</div>
-        </article>
-        @endforeach
+        <div class="grid-container">
+            @foreach ($collections as $collection)
+            <article class="collection-item">
+                <img class="collection-img" src="{{ asset('images/' . ($collection->image ?? 'default.jpg')) }}" alt="{{ $collection->name }}">
+                <div>{{ $collection->name }}</div>
+            </article>
+            @endforeach
+        </div>
     </main>
 @endsection
