@@ -42,6 +42,8 @@ div {
 img {
         border: none;
 		max-width: 30%;
+        display: block;
+        margin: 0 auto;
         text-align:center;
 }
 
@@ -67,7 +69,7 @@ footer {
 .btn {
     display: inline-block;
     padding: 2px 8px;
-    border-bottom: 1px solid #716965;
+    border: none;
     border-radius: 4px;
     background: #ead7cb;
     color: #716965;
@@ -93,4 +95,12 @@ footer {
 .collection-img {
     max-width: 100%;
     height: auto;
+}
+
+/* フォームの形式 */
+.form-group {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }

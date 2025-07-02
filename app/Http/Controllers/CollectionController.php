@@ -36,11 +36,10 @@ class CollectionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        $collection = new Collection();
-        $data = ['article' => $article];
-        return view('collections.create', $data);
+        $image = $request->input('image');
+        return view('collections.create', compact('image'));
     }
 
     /**
@@ -55,7 +54,8 @@ class CollectionController extends Controller
             'name' => 'required|max:255',
             'memo' => 'required'
         ]);
-        $collection = new Article();
+
+        $collection = new Collection();
         $collection->name = $request->name;
         $collection->image = $request->image;
         $collection->memo = $request->memo;

@@ -3,26 +3,46 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CollectionController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+// resources/views/selecsionsのルート
 Route::view('/', 'selections/start');
-Route::view('/chick', 'selections/yellow1');
-Route::view('/chicken', 'selections/yellow2');
-Route::view('/tadpole', 'selections/green1');
-Route::view('/frog', 'selections/green2');
-Route::view('/boarlest', 'selections/brown1');
-Route::view('/boar', 'selections/brown2');
+Route::get('/chick', function () {
+    return view('selections.yellow1', [
+        'image' => 'yellow1.png'
+    ]);
+});
+Route::get('/chicken', function () {
+    return view('selections.yellow2', [
+        'image' => 'yellow2.png'
+    ]);
+});
+Route::get('/tadpole', function () {
+    return view('selections.green1', [
+        'image' => 'green1.png'
+    ]);
+});
+Route::get('/frog', function () {
+    return view('selections.green2', [
+        'image' => 'green2.png'
+    ]);
+});
+Route::get('/boarlest', function () {
+    return view('selections.brown1', [
+        'image' => 'brown1.png'
+    ]);
+});
+Route::get('/boar', function () {
+    return view('selections.brown2', [
+        'image' => 'brown2.png'
+    ]);
+});
+
+
+
+//着せ替えできたらいいな
 Route::view('/dressup', 'dressup');
 
+// resources/views/collectionsのルート
 Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
 Route::get('/collections/create', [CollectionController::class, 'create'])->name('collections.create');
 Route::post('/collections', [CollectionController::class, 'store'])->name('collections.store');
