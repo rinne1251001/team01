@@ -24,3 +24,5 @@ Route::view('/boar', 'selections/brown2');
 Route::view('/dressup', 'dressup');
 
 Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
+Route::get('/collections/create', [CollectionController::class, 'create'])->name('collections.create');
+Route::post('/collections', [CollectionController::class, 'store'])->name('collections.store');

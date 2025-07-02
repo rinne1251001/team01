@@ -17,6 +17,7 @@ class CreateCollectionsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable();
+            $table->text('memo');
             $table->timestamps();
         });
     }

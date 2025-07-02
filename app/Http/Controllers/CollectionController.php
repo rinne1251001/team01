@@ -38,7 +38,9 @@ class CollectionController extends Controller
      */
     public function create()
     {
-        //
+        $collection = new Collection();
+        $data = ['article' => $article];
+        return view('collections.create', $data);
     }
 
     /**
@@ -49,7 +51,17 @@ class CollectionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'memo' => 'required'
+        ]);
+        $collection = new Article();
+        $collection->name = $request->name;
+        $collection->image = $request->image;
+        $collection->memo = $request->memo;
+        $collection->save();
+
+        return redirect(route('collections.index'));
     }
 
     /**
