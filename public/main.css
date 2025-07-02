@@ -55,6 +55,14 @@ footer {
     color: #777;
 }
 
+/* create.blade.phpのcss */
+ul.alert {
+    padding: 15px 15px 15px 40px;
+    border-radius: 4px;
+    background: #f8d6d9;
+    color: #721c24;
+}
+
 /* 「どのごはんをあげる？」のcss */
 .question{
     font-size: 1.5em;
