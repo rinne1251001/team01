@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<x-create-button :image="$image" />
     <div class="adult">成長！</div>
     <div><img src="/images/yellow2.png" alt="にわとり"></div>
     <div>

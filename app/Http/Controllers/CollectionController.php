@@ -84,7 +84,8 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
-        //
+        $data = ['collection' => $collection];
+        return view('collections.edit', $data);
     }
 
     /**
@@ -96,7 +97,14 @@ class CollectionController extends Controller
      */
     public function update(Request $request, Collection $collection)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'memo' => 'required'
+        ]);
+        $collection->name = $request->title;
+        $collection->memo = $request->body;
+        $collection->save();
+        return redirect(route('collections.show', $collection));
     }
 
     /**
@@ -107,6 +115,7 @@ class CollectionController extends Controller
      */
     public function destroy(Collection $collection)
     {
-        //
+        $collection->delete();
+        return redirect(route('collections.index'));
     }
 }

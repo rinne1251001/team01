@@ -47,3 +47,9 @@ Route::get('/collections', [CollectionController::class, 'index'])->name('collec
 Route::get('/collections/create', [CollectionController::class, 'create'])->name('collections.create');
 Route::post('/collections', [CollectionController::class, 'store'])->name('collections.store');
 Route::get('/collections/{collection}', [CollectionController::class, 'show'])->name('collections.show');
+Route::get('/collections/{collection}/edit', [CollectionController::class, 'edit'])->name('collections.edit');
+Route::patch('/collections/{collection}', [CollectionController::class, 'update'])->name('collections.update');
+Route::delete('/collections/{collection}', [CollectionController::class, 'destroy'])->name('collections.destroy');
+
+
+
