@@ -16,6 +16,11 @@ Route::get('/chicken', function () {
         'image' => 'yellow2.png'
     ]);
 });
+Route::get('/egg', function () {
+    return view('selections.yellow3', [
+        'image' => 'yellow3.png'
+    ]);
+});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
         'image' => 'green1.png'
@@ -34,6 +39,16 @@ Route::get('/boarlest', function () {
 Route::get('/boar', function () {
     return view('selections.brown2', [
         'image' => 'brown2.png'
+    ]);
+});
+Route::get('/brownegg', function () {
+    return view('selections.orange1', [
+        'image' => 'orange1.png'
+    ]);
+});
+Route::get('/misterious', function () {
+    return view('selections.rainbow1', [
+        'image' => 'rainbow1.png'
     ]);
 });
 

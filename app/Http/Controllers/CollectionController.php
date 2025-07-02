@@ -19,10 +19,13 @@ class CollectionController extends Controller
         $images = [
         1 => 'yellow1.png',
         2 => 'yellow2.png',
-        3 => 'green1.png',
-        4 => 'green2.png',
-        5 => 'brown1.png',
-        6 => 'brown2.png',
+        3 => 'yellow3.png',
+        4 => 'green1.png',
+        5 => 'green2.png',
+        6 => 'brown1.png',
+        7 => 'brown2.png',
+        8 => 'orange1.png',
+        9 => 'rainbow1.png',
         // 必要な分だけ追加
         ];
         return view('collections.index', [

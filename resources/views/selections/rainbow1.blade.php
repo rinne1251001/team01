@@ -3,8 +3,8 @@
 @section('content')
 <x-create-button :image="$image" />
     <div class="question">どのごはんをあげる？</div>
-    <div><img src="/images/yellow2.png" alt="にわとり"></div>
+    <div><img src="/images/rainbow1.png" alt="なぞのたまご"></div>
     <div>
-        <a class="btn" href="/egg">きいろのごはん</a>
+        <a class="btn" href="/chicken">きいろのごはん</a>
     </div>
 @endsection
