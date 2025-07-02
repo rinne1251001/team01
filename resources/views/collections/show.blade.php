@@ -12,7 +12,6 @@
             <h2>{{ $collection->name }}</h2>
         </div>
 
-        作成日
         <div class="form-group">
             <p>登録日：{{ $collection->created_at->format('Y年m月d日 H:i') }}</p>
         </div>

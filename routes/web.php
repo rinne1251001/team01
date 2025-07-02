@@ -51,6 +51,16 @@ Route::get('/misterious', function () {
         'image' => 'rainbow1.png'
     ]);
 });
+Route::get('/babydragon', function () {
+    return view('selections.brue1', [
+        'image' => 'brue1.png'
+    ]);
+});
+Route::get('/dragon', function () {
+    return view('selections.brue2', [
+        'image' => 'brue2.png'
+    ]);
+});
 
 
 
