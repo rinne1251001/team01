@@ -61,7 +61,11 @@ Route::get('/dragon', function () {
         'image' => 'brue2.png'
     ]);
 });
-
+Route::get('/rabbit', function () {
+    return view('selections.white1', [
+        'image' => 'white1.png'
+    ]);
+});
 
 
 //着せ替えできたらいいな

@@ -6,5 +6,6 @@
     <div><img src="/images/rainbow1.png" alt="なぞのたまご"></div>
     <div>
         <a class="btn" href="/babydragon">あおいろのごはん</a>
+        <a class="btn" href="/rabbit">しろいろのごはん</a>
     </div>
 @endsection
