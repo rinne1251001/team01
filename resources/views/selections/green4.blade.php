@@ -5,6 +5,6 @@
     <div class="question">どのごはんをあげる？</div>
     <div><img src="/images/green4.png" alt="あんふぃすばえな"></div>
     <div>
-        <a class="btn" href="/yamatanoorochi">みどりのごはん</a>
+        <a class="btn btn-green" href="/yamatanoorochi">みどりのごはん</a>
     </div>
 @endsection

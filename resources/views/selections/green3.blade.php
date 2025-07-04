@@ -5,7 +5,7 @@
     <div class="question">どのごはんをあげる？</div>
     <div><img src="/images/green3.png" alt="へび"></div>
     <div>
-        <a class="btn" href="/egg">きいろのごはん</a>
-        <a class="btn" href="/amphisbaena">みどりのごはん</a>
+        <a class="btn btn-yellow" href="/egg">きいろのごはん</a>
+        <a class="btn btn-green" href="/amphisbaena">みどりのごはん</a>
     </div>
 @endsection

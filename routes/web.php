@@ -77,13 +77,13 @@ Route::get('/misterious', function () {
     ]);
 });
 Route::get('/babydragon', function () {
-    return view('selections.brue1', [
-        'image' => 'brue1.png'
+    return view('selections.blue1', [
+        'image' => 'blue1.png'
     ]);
 });
 Route::get('/dragon', function () {
-    return view('selections.brue2', [
-        'image' => 'brue2.png'
+    return view('selections.blue2', [
+        'image' => 'blue2.png'
     ]);
 });
 Route::get('/rabbit', function () {

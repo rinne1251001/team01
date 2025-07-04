@@ -84,6 +84,28 @@ ul.alert {
     font-size: .9rem;
     cursor: pointer;
 }
+/*クリックしたときに色が終わるcss */
+.btn-yellow:active{
+    background: #ffe380;
+}
+.btn-green:active{
+    background: #bfdeae;
+}
+.btn-brown:active{
+    background: #bc9678;
+}
+.btn-orange:active{
+    background: #fed891;
+}
+.btn-rainbow:active{
+    background: #bc9678;
+}
+.btn-blue:active{
+    background: #748bdb;
+}
+.btn-white:active{
+    background: #f9f8f4;
+}
 
 /* ひろばのボックス設定 */
 .grid-container {

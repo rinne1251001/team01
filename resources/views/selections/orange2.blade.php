@@ -5,6 +5,6 @@
     <div class="question">どのごはんをあげる？</div>
     <div><img src="/images/orange2.png" alt="煮卵"></div>
     <div>
-        <a class="btn" href="/omeletrice">オレンジのごはん</a>
+        <a class="btn btn-orange" href="/omeletrice">オレンジのごはん</a>
     </div>
 @endsection
