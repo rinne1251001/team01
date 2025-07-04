@@ -61,6 +61,16 @@ Route::get('/brownegg', function () {
         'image' => 'orange1.png'
     ]);
 });
+Route::get('/boiledegg', function () {
+    return view('selections.orange2', [
+        'image' => 'orange2.png'
+    ]);
+});
+Route::get('/omeletrice', function () {
+    return view('selections.orange3', [
+        'image' => 'orange3.png'
+    ]);
+});
 Route::get('/misterious', function () {
     return view('selections.rainbow1', [
         'image' => 'rainbow1.png'

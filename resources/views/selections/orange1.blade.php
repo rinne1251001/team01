@@ -6,5 +6,6 @@
     <div><img src="/images/orange1.png" alt="赤玉"></div>
     <div>
         <a class="btn" href="/chick">きいろのごはん</a>
+        <a class="btn" href="/boiledegg">オレンジのごはん</a>
     </div>
 @endsection
