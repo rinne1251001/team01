@@ -76,6 +76,11 @@ Route::get('/misterious', function () {
         'image' => 'rainbow1.png'
     ]);
 });
+Route::get('/dokuchu', function () {
+    return view('selections.rainbow2', [
+        'image' => 'rainbow2.gif'
+    ]);
+});
 Route::get('/babydragon', function () {
     return view('selections.blue1', [
         'image' => 'blue1.png'

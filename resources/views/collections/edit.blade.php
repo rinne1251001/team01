@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @include('commons.errors')
-<main class="container">
+<main>
     <form action="{{ route('collections.update', $collection->id) }}" method="POST">
         @method('patch')
         @csrf

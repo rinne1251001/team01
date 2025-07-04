@@ -55,14 +55,6 @@ footer {
     color: #777;
 }
 
-/* create.blade.phpのcss */
-ul.alert {
-    padding: 15px 15px 15px 40px;
-    border-radius: 4px;
-    background: #f8d6d9;
-    color: #721c24;
-}
-
 /* 「どのごはんをあげる？」のcss */
 .question{
     font-size: 1.5em;
@@ -98,7 +90,7 @@ ul.alert {
     background: #fed891;
 }
 .btn-rainbow:active{
-    background: #bc9678;
+    background: linear-gradient(to right,#db6e86,#ec947a,#fee55f,#95d98a,#00d1cf,#00b5e4,#ba58e2);
 }
 .btn-blue:active{
     background: #748bdb;
@@ -127,10 +119,93 @@ ul.alert {
     height: auto;
 }
 
+/* create.blade.phpのcss */
+ul.alert {
+    padding: 15px 15px 15px 40px;
+    border-radius: 4px;
+    background: #f8d6d9;
+    color: #721c24;
+}
 /* フォームの形式 */
 .form-group {
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+}
+.form-design {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    text-align:center;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+textarea.form-design {
+    height: 200px;
+}
+
+/* show.blade.phpのcss */
+.show-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .show-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.show-grid .left,
+.show-grid .right {
+    text-align: center;
+}
+.show-grid img {
+    max-width: 70%;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.name-box, .date-box, .memo-box{
+    background: #ead7cb;
+    color: #716965;
+    padding: 8px 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.name-box{
+    height: 30px;
+    width: 200px;
+    max-width: 70%;
+}
+.date-box{
+    height: 30px;
+    width: 200px;
+    max-width: 70%;
+}
+.memo-box{
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }

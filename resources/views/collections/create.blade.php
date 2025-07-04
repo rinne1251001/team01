@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @include('commons.errors')
-<main class="container">
+<main>
     <form action="{{ route('collections.store') }}" method="POST">
         @csrf
 
@@ -11,11 +11,11 @@
         </div>
         <div class="form-group">
             <label for="name">なまえをつけてね</label>
-            <input type="text" name="name" value="{{ old('name') }}">
+            <input type="text" name="name" class="form-design" value="{{ old('name') }}">
         </div>
         <div class="form-group">
             <label for="memo">メモ</label>
-            <textarea name="memo" rows="4" cols="40">{{ old('memo') }}</textarea>
+            <textarea name="memo" class="form-design">{{ old('memo') }}</textarea>
         </div>
         
         <input type="submit" value="登録" class="btn">

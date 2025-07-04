@@ -1,33 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="container">
+<main>
     <div>
-        <div class="form-group">
-            <img src="/images/{{ $collection->image }}" alt="{{ $collection->name }}">
-        </div>
 
-        名前
-        <div class="form-group">
-            <h2>{{ $collection->name }}</h2>
-        </div>
+        <div class="show-grid">
+            <div class="left">
+                <img src="/images/{{ $collection->image }}" alt="{{ $collection->name }}">
+                <div class="row">名前<span class="name-box">{{ $collection->name }}</span></div>
+            </div>
 
-        <div class="form-group">
-            <p>登録日：{{ $collection->created_at->format('Y年m月d日 H:i') }}</p>
-        </div>
+            <div class="right">
+                <div class="row">登録日<span class="date-box">{{ $collection->created_at->format('Y年m月d日 H:i') }}</span></div>
+                <p>メモ</p>
+                <div class="memo-box">{!! nl2br(e($collection->memo)) !!}</div>
 
-        メモ
-        <div class="form-group">
-            {!! nl2br(e($collection->memo)) !!}
+                <div class="btn-group">
+                    <a href="{{ route('collections.edit', $collection) }}" class="btn">編集</a>
+                    <form onsubmit="return confirm('本当に削除しますか？')" action="{{ route('collections.destroy', $collection) }}" method="post">
+                        @csrf 
+                        @method('delete')
+                        <input type="submit" value="削除" class="btn">
+                    </form>
+                    <a href="{{ route('collections.index') }}" class="btn">もどる</a>
+                </div>
+            </div>
         </div>
-
-        <a href="{{ route('collections.edit', $collection) }}" class="btn">編集</a>
-        <form onsubmit="return confirm('本当に削除しますか？')" action="{{ route('collections.destroy', $collection) }}" method="post">
-            @csrf 
-            @method('delete')
-            <input type="submit" value="削除" class="btn">
-        </form>
-        <a href="{{ route('collections.index') }}" class="btn">もどる</a>
     </div>
 </main>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <main class="container">
+    <main>
         <div class="grid-container">
             @foreach ($collections as $collection)
             <article class="collection-item">
