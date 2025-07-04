@@ -22,13 +22,16 @@ class CollectionController extends Controller
         3 => 'yellow3.png',
         4 => 'green1.png',
         5 => 'green2.png',
-        6 => 'brown1.png',
-        7 => 'brown2.png',
-        8 => 'orange1.png',
-        9 => 'rainbow1.png',
-        10 => 'blue1.png',
-        11 => 'blue2.png',
-        12 => 'white1.png',
+        6 => 'green3.png',
+        7 => 'green4.png',
+        8 => 'green5.png',
+        9 => 'brown1.png',
+        10 => 'brown2.png',
+        11 => 'orange1.png',
+        12 => 'rainbow1.png',
+        13 => 'blue1.png',
+        14 => 'blue2.png',
+        15 => 'white1.png',
         // 必要な分だけ追加
         ];
         return view('collections.index', [

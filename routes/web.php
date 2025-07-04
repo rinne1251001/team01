@@ -31,6 +31,21 @@ Route::get('/frog', function () {
         'image' => 'green2.png'
     ]);
 });
+Route::get('/snake', function () {
+    return view('selections.green3', [
+        'image' => 'green3.png'
+    ]);
+});
+Route::get('/amphisbaena', function () {
+    return view('selections.green4', [
+        'image' => 'green4.png'
+    ]);
+});
+Route::get('/yamatanoorochi', function () {
+    return view('selections.green5', [
+        'image' => 'green5.png'
+    ]);
+});
 Route::get('/boarlest', function () {
     return view('selections.brown1', [
         'image' => 'brown1.png'
