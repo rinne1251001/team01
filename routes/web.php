@@ -61,19 +61,29 @@ Route::get('/brownegg', function () {
         'image' => 'orange1.png'
     ]);
 });
+Route::get('/boiledegg', function () {
+    return view('selections.orange2', [
+        'image' => 'orange2.png'
+    ]);
+});
+Route::get('/omeletrice', function () {
+    return view('selections.orange3', [
+        'image' => 'orange3.png'
+    ]);
+});
 Route::get('/misterious', function () {
     return view('selections.rainbow1', [
         'image' => 'rainbow1.png'
     ]);
 });
 Route::get('/babydragon', function () {
-    return view('selections.brue1', [
-        'image' => 'brue1.png'
+    return view('selections.blue1', [
+        'image' => 'blue1.png'
     ]);
 });
 Route::get('/dragon', function () {
-    return view('selections.brue2', [
-        'image' => 'brue2.png'
+    return view('selections.blue2', [
+        'image' => 'blue2.png'
     ]);
 });
 Route::get('/rabbit', function () {
