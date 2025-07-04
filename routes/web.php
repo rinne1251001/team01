@@ -91,11 +91,7 @@ Route::get('/rabbit', function () {
         'image' => 'white1.png'
     ]);
 });
-Route::get('/ryu', function () {
-    return view('selections.yellow4', [
-        'image' => 'yellow4.png'
-    ]);
-});
+
 
 //着せ替えできたらいいな
 Route::view('/dressup', 'dressup');
