@@ -21,7 +21,7 @@ Route::get('/egg', function () {
         'image' => 'yellow3.png'
     ]);
 });
-Route::get('/snake', function () {
+Route::get('/ryu', function () {
     return view('selections.yellow4', [
         'image' => 'yellow4.png'
     ]);

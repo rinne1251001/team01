@@ -6,5 +6,6 @@
     <div><img src="/images/green4.png" alt="あんふぃすばえな"></div>
     <div>
         <a class="btn btn-green" href="/yamatanoorochi">みどりのごはん</a>
+        <a class="btn btn-gold" href="/ryu">きんいろのごはん</a>
     </div>
 @endsection
