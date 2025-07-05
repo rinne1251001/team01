@@ -98,6 +98,9 @@ footer {
 .btn-white:active{
     background: #f9f8f4;
 }
+.btn-gold:active{
+    background: linear-gradient(to right ,#e6b422, #e6b422, #fff9e6, #e6b422);
+}
 
 /* ひろばのボックス設定 */
 .grid-container {
@@ -115,6 +118,7 @@ footer {
     margin-bottom: 1em;
 }
 .collection-img {
+    width: 420px;
     max-width: 100%;
     height: auto;
 }
@@ -163,9 +167,23 @@ textarea.form-design {
         grid-template-columns: 1fr;
     }
 }
-.show-grid .left,
-.show-grid .right {
+.left, .right, .under {
     text-align: center;
+}
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right {
+  text-align: center;
+  margin-top: 44px;
+}
+.under {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
 }
 .show-grid img {
     max-width: 70%;
@@ -188,24 +206,46 @@ textarea.form-design {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+.left .label {
+  margin-left: 90px;
+  font-weight: bolder;
+}
+.right .label {
+  margin-left: 40px;
+  font-weight: bolder;
+}
 .name-box{
-    height: 30px;
+    height: 45px;
     width: 200px;
     max-width: 70%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .date-box{
     height: 30px;
-    width: 200px;
+    width: 250px;
     max-width: 70%;
+    margin-right: 40px;
 }
 .memo-box{
     height: 200px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
+    text-align: left;
+    padding: 20px 40px;
 }
 .btn-group {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+}
+.btn-group form {
+    display: inline-block;
+    margin: 0;
+}
+.btn-group .btn {
+    vertical-align: middle;
 }

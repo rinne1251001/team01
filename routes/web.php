@@ -21,7 +21,7 @@ Route::get('/egg', function () {
         'image' => 'yellow3.png'
     ]);
 });
-Route::get('/ryu', function () {
+Route::get('/fox', function () {
     return view('selections.yellow4', [
         'image' => 'yellow4.png'
     ]);
@@ -61,6 +61,16 @@ Route::get('/boar', function () {
         'image' => 'brown2.png'
     ]);
 });
+Route::get('/bear', function () {
+    return view('selections.brown3', [
+        'image' => 'brown3.png'
+    ]);
+});
+Route::get('/raccondog', function () {
+    return view('selections.brown4', [
+        'image' => 'brown4.png'
+    ]);
+});
 Route::get('/brownegg', function () {
     return view('selections.orange1', [
         'image' => 'orange1.png'
@@ -74,6 +84,11 @@ Route::get('/boiledegg', function () {
 Route::get('/omeletrice', function () {
     return view('selections.orange3', [
         'image' => 'orange3.png'
+    ]);
+});
+Route::get('/skeweredchicken', function () {
+    return view('selections.orange4', [
+        'image' => 'orange4.png'
     ]);
 });
 Route::get('/misterious', function () {
@@ -99,6 +114,11 @@ Route::get('/dragon', function () {
 Route::get('/rabbit', function () {
     return view('selections.white1', [
         'image' => 'white1.png'
+    ]);
+});
+Route::get('/ryu', function () {
+    return view('selections.gold1', [
+        'image' => 'gold1.png'
     ]);
 });
 
