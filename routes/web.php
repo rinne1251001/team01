@@ -22,8 +22,8 @@ Route::get('/egg', function () {
     ]);
 });
 Route::get('/ryu', function () {
-    return view('selections.yellow4', [
-        'image' => 'yellow4.png'
+    return view('selections.gold1', [
+        'image' => 'gold1.png'
     ]);
 });
 Route::get('/tadpole', function () {
