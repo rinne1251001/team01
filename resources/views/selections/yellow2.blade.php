@@ -7,5 +7,6 @@
     <div>
         <a class="btn btn-yellow" href="/egg">きいろのごはん</a>
         <a class="btn btn-green" href="/snake">みどりのごはん</a>
+        <a class="btn btn-orange" href="/skeweredchicken">オレンジのごはん</a>
     </div>
 @endsection
