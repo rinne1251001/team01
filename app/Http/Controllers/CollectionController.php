@@ -20,7 +20,7 @@ class CollectionController extends Controller
         1 => 'yellow1.png',
         2 => 'yellow2.png',
         3 => 'yellow3.png',
-        4 => 'gold1.png',
+        4 => 'yellow4.png',
         5 => 'green1.png',
         6 => 'green2.png',
         7 => 'green3.png',

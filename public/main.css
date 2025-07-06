@@ -282,3 +282,26 @@ textarea.form-design {
         margin-left: 0;
     }
 }
+
+
+.dressup-container {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+}
+.animal-img,.dressup-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 330px;
+    max-width: none;
+}
+.animal-img {
+    z-index: 1;
+}
+.dressup-img {
+    z-index: 2;
+    pointer-events: none;
+}
