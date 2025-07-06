@@ -41,6 +41,7 @@ div {
 
 img {
         border: none;
+        width: 330px;
 		max-width: 30%;
         display: block;
         margin: 0 auto;
@@ -58,15 +59,18 @@ footer {
 /* 「どのごはんをあげる？」のcss */
 .question{
     font-size: 1.5em;
+    font-weight: bolder;
 }
 
 /* 「成長！」のcss */
 .adult{
     font-size: 2em;
+    font-weight: bolder;
 }
 
 /* 「きいろのごはん」などのcss */
 .btn {
+    all: unset;
     display: inline-block;
     padding: 2px 8px;
     border: none;
@@ -162,11 +166,6 @@ textarea.form-design {
     margin: 0 auto;
     padding: 20px;
 }
-@media (max-width: 768px) {
-    .show-grid {
-        grid-template-columns: 1fr;
-    }
-}
 .left, .right, .under {
     text-align: center;
 }
@@ -248,4 +247,38 @@ textarea.form-design {
 }
 .btn-group .btn {
     vertical-align: middle;
+}
+
+/* 画面が小さい時ののcss */
+@media (max-width: 768px) {
+    .show-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .sp-only {
+        display: none;
+    }
+    .name-box, .date-box {
+        height: 45px;
+        width: 250px;
+        max-width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right {
+        margin-top: -30px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left .label, .right .label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
 }

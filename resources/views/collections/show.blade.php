@@ -19,10 +19,10 @@
             <div class="under">
                 <div class="btn-group">
                     <a href="{{ route('collections.edit', $collection) }}" class="btn">編集</a>
-                    <form onsubmit="return confirm('本当に削除しますか？')" action="{{ route('collections.destroy', $collection) }}" method="post">
+                    <form onsubmit="return confirm('本当に削除しますか？')" action="{{ route('collections.destroy', $collection) }}" method="post" style="display: inline;">
                         @csrf 
                         @method('delete')
-                        <input type="submit" value="削除" class="btn">
+                        <button type="submit" class="btn">削除</button>
                     </form>
                     <a href="{{ route('collections.index') }}" class="btn">もどる</a>
                 </div>
