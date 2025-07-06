@@ -19,19 +19,7 @@ Route::get('/chicken', function () {
 Route::get('/egg', function () {
     return view('selections.yellow3', [
         'image' => 'yellow3.png'
-    ]);
-});
-<<<<<<< HEAD
-Route::get('/ryu', function () {
-    return view('selections.gold1', [
-        'image' => 'gold1.png'
-=======
-Route::get('/fox', function () {
-    return view('selections.yellow4', [
-        'image' => 'yellow4.png'
->>>>>>> 5b384fcc964e13b7eba3b89436b84c7288db12f8
-    ]);
-});
+    ]);});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
         'image' => 'green1.png'
