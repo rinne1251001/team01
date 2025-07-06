@@ -19,13 +19,7 @@ Route::get('/chicken', function () {
 Route::get('/egg', function () {
     return view('selections.yellow3', [
         'image' => 'yellow3.png'
-    ]);
-});
-Route::get('/fox', function () {
-    return view('selections.yellow4', [
-        'image' => 'yellow4.png'
-    ]);
-});
+    ]);});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
         'image' => 'green1.png'
