@@ -115,6 +115,11 @@ Route::get('/ryu', function () {
         'image' => 'gold1.png'
     ]);
 });
+Route::get('/dog', function () {
+    return view('selections.rainbow3', [
+        'image' => 'rainbow3.png'
+    ]);
+});
 
 
 //着せ替えできたらいいな
