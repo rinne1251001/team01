@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\CollectionController;
 
 
@@ -8,115 +9,115 @@ use App\Http\Controllers\CollectionController;
 Route::view('/', 'selections/start');
 Route::get('/chick', function () {
     return view('selections.yellow1', [
-        'image' => 'yellow1.png'
+        'image' => 'images/yellow1.png'
     ]);
 });
 Route::get('/chicken', function () {
     return view('selections.yellow2', [
-        'image' => 'yellow2.png'
+        'image' => 'images/yellow2.png'
     ]);
 });
 Route::get('/egg', function () {
     return view('selections.yellow3', [
-        'image' => 'yellow3.png'
+        'image' => 'images/yellow3.png'
     ]);});
 Route::get('/fox', function () {
     return view('selections.yellow4', [
-        'image' => 'yellow5.png'
+        'image' => 'images/yellow5.png'
 ]);});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
-        'image' => 'green1.png'
+        'image' => 'images/green1.png'
     ]);
 });
 Route::get('/frog', function () {
     return view('selections.green2', [
-        'image' => 'green2.png'
+        'image' => 'images/green2.png'
     ]);
 });
 Route::get('/snake', function () {
     return view('selections.green3', [
-        'image' => 'green3.png'
+        'image' => 'images/green3.png'
     ]);
 });
 Route::get('/amphisbaena', function () {
     return view('selections.green4', [
-        'image' => 'green4.png'
+        'image' => 'images/green4.png'
     ]);
 });
 Route::get('/yamatanoorochi', function () {
     return view('selections.green5', [
-        'image' => 'green5.png'
+        'image' => 'images/green5.png'
     ]);
 });
 Route::get('/boarlest', function () {
     return view('selections.brown1', [
-        'image' => 'brown1.png'
+        'image' => 'images/brown1.png'
     ]);
 });
 Route::get('/boar', function () {
     return view('selections.brown2', [
-        'image' => 'brown2.png'
+        'image' => 'images/brown2.png'
     ]);
 });
 Route::get('/bear', function () {
     return view('selections.brown3', [
-        'image' => 'brown3.png'
+        'image' => 'images/brown3.png'
     ]);
 });
 Route::get('/raccondog', function () {
     return view('selections.brown4', [
-        'image' => 'brown4.png'
+        'image' => 'images/brown4.png'
     ]);
 });
 Route::get('/brownegg', function () {
     return view('selections.orange1', [
-        'image' => 'orange1.png'
+        'image' => 'images/orange1.png'
     ]);
 });
 Route::get('/boiledegg', function () {
     return view('selections.orange2', [
-        'image' => 'orange2.png'
+        'image' => 'images/orange2.png'
     ]);
 });
 Route::get('/omeletrice', function () {
     return view('selections.orange3', [
-        'image' => 'orange3.png'
+        'image' => 'images/orange3.png'
     ]);
 });
 Route::get('/skeweredchicken', function () {
     return view('selections.orange4', [
-        'image' => 'orange4.png'
+        'image' => 'images/orange4.png'
     ]);
 });
 Route::get('/misterious', function () {
     return view('selections.rainbow1', [
-        'image' => 'rainbow1.png'
+        'image' => 'images/rainbow1.png'
     ]);
 });
 Route::get('/dokuchu', function () {
     return view('selections.rainbow2', [
-        'image' => 'rainbow2.gif'
+        'image' => 'images/rainbow2.gif'
     ]);
 });
 Route::get('/babydragon', function () {
     return view('selections.blue1', [
-        'image' => 'blue1.png'
+        'image' => 'images/blue1.png'
     ]);
 });
 Route::get('/dragon', function () {
     return view('selections.blue2', [
-        'image' => 'blue2.png'
+        'image' => 'images/blue2.png'
     ]);
 });
 Route::get('/rabbit', function () {
     return view('selections.white1', [
-        'image' => 'white1.png'
+        'image' => 'images/white1.png'
     ]);
 });
 Route::get('/ryu', function () {
     return view('selections.gold1', [
-        'image' => 'gold1.png'
+        'image' => 'images/gold1.png'
     ]);
 });
 Route::get('/dog', function () {
@@ -126,8 +127,11 @@ Route::get('/dog', function () {
 });
 
 
-//着せ替えできたらいいな
-Route::view('/dressup', 'dressup');
+//着せ替え用のルート
+Route::get('/dressup', function (Request $request) {
+    $image = $request->query('image', 'images/yellow1.png');
+    return view('dressup', compact('image'));
+})->name('dressup');
 
 // resources/views/collectionsのルート
 Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');

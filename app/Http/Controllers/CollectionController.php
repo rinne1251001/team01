@@ -57,7 +57,7 @@ class CollectionController extends Controller
      */
     public function create(Request $request)
     {
-        $image = $request->input('image');
+        $image = $request->query('image');
         return view('collections.create', compact('image'));
     }
 
@@ -76,11 +76,11 @@ class CollectionController extends Controller
 
         $collection = new Collection();
         $collection->name = $request->name;
-        $collection->image = $request->image;
+        $collection->image = basename($request->image);
         $collection->memo = $request->memo;
         $collection->save();
 
-        return redirect(route('collections.index'));
+        return redirect()->route('collections.index');
     }
 
     /**

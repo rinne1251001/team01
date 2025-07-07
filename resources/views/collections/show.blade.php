@@ -6,7 +6,7 @@
 
         <div class="show-grid">
             <div class="left">
-                <img src="/images/{{ $collection->image }}" alt="{{ $collection->name }}">
+                <img src="{{ asset('images/' . $collection->image) }}" alt="{{ $collection->name }}">
                 <div class="row"><span class="label">名前</span><span class="name-box">{{ $collection->name }}</span></div>
             </div>
 

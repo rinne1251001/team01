@@ -6,8 +6,8 @@
         @csrf
 
         <div class="form-group">
-            <img src="/images/{{ $image }}">
-            <input type="hidden" name="image" value="{{ $image }}">
+            <img src="{{ asset('images/' . $image) }}">
+            <input type="hidden" name="image" value="{{ basename($image) }}">
         </div>
         <div class="form-group">
             <label for="name">なまえをつけてね</label>

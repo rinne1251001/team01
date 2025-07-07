@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<x-create-button :image="$image" />
+    <div class="btn-group-x">
+        <x-create-button :image="basename($image)" />
+        <x-dressup-button :image="$image" />
+    </div>
+
     <div class="adult">成長！</div>
     <div><img src="/images/gold1.png" alt="りゅう"></div>
     <div>

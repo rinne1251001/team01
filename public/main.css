@@ -106,6 +106,10 @@ footer {
     background: linear-gradient(to right ,#e6b422, #e6b422, #fff9e6, #e6b422);
 }
 
+.btn-group-x {
+    display: flex;
+}
+
 /* ひろばのボックス設定 */
 .grid-container {
     display: flex;
@@ -249,7 +253,49 @@ textarea.form-design {
     vertical-align: middle;
 }
 
-/* 画面が小さい時ののcss */
+/* dressup.blade.phpのcss */
+input[type=radio] {
+    display:none;
+}
+label.btn {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    border-radius: 20px;
+}
+input[type=radio]:checked + label {
+    background-color: #ed8c7d;
+    color: #ead7cb;
+}
+.dressup-container {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+}
+.animal-img,.dressup-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 330px;
+    max-width: none;
+}
+.animal-img {
+    z-index: 1;
+}
+.dressup-img {
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* 画面が小さい時のcss */
 @media (max-width: 768px) {
     .show-grid {
         grid-template-columns: 1fr;
@@ -281,27 +327,4 @@ textarea.form-design {
         justify-content: center;
         margin-left: 0;
     }
-}
-
-
-.dressup-container {
-    position: relative;
-    width: 330px;
-    height: 330px;
-    margin: 0 auto;
-}
-.animal-img,.dressup-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 330px;
-    height: 330px;
-    max-width: none;
-}
-.animal-img {
-    z-index: 1;
-}
-.dressup-img {
-    z-index: 2;
-    pointer-events: none;
 }
