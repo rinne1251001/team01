@@ -8,6 +8,6 @@
         <a class="btn btn-blue" href="/babydragon">あおいろのごはん</a>
         <a class="btn btn-white" href="/rabbit">しろいろのごはん</a>
         <a class="btn btn-rainbow" href="/dokuchu">にじいろのごはん</a>
-        <a class="btn btn-rainbow" href="/dog">にじいろのごはん</a>
+        <a class="btn btn-yellow" href="/dog">きいろのごはん</a>
     </div>
 @endsection

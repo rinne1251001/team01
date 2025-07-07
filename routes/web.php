@@ -120,8 +120,8 @@ Route::get('/ryu', function () {
     ]);
 });
 Route::get('/dog', function () {
-    return view('selections.rainbow3', [
-        'image' => 'rainbow3.png'
+    return view('selections.yellow5', [
+        'image' => 'yellow5.png'
     ]);
 });
 
