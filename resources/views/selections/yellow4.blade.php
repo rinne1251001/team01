@@ -10,6 +10,6 @@
     <div><img src="/images/yellow4.png" alt="きつね"></div>
     <div>
         <a class="btn btn-brown" href="/raccondog">ちゃいろのごはん</a>
-        <a class="btn btn-rainbow" href="/misterious">にじいろのごはん</a>
+        <a class="btn btn-rainbow" href="/">にじいろのごはん</a>
     </div>
 @endsection

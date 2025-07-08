@@ -73,9 +73,22 @@ class CollectionController extends Controller
             'memo' => 'required'
         ]);
 
+        $filename = null;
+
+        if ($request->has('imageData')) {
+            $imageData = $request->input('imageData');
+            $image = str_replace('data:image/png;base64,', '', $imageData);
+            $image = str_replace(' ', '+', $image);
+            $filename = 'img_' . time() . '.png';
+            $path = public_path('images/' . $filename);
+            file_put_contents($path, base64_decode($image));
+        } elseif ($request->has('image')) {
+            $filename = basename($request->input('image')); // 既存ファイルのまま使う
+        }
+
         $collection = new Collection();
         $collection->name = $request->name;
-        $collection->image = basename($request->image);
+        $collection->image = $filename;
         $collection->memo = $request->memo;
         $collection->save();
 
@@ -119,9 +132,16 @@ class CollectionController extends Controller
             'name' => 'required|max:255',
             'memo' => 'required'
         ]);
-        $collection->name = $request->title;
-        $collection->memo = $request->body;
+
+        $collection->name = $request->name;
+        $collection->memo = $request->memo;
+
+        if ($request->has('image')) {
+            $collection->image = $request->image;
+        }
+
         $collection->save();
+
         return redirect(route('collections.show', $collection));
     }
 

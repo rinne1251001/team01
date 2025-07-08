@@ -9,6 +9,8 @@
     <div class="question">どのごはんをあげる？</div>
     <div><img src="/images/brown4.png" alt="たぬき"></div>
     <div>
+        <a class="btn btn-yellow" href="/fox">きいろのごはん</a>
         <a class="btn btn-brown" href="/bear">ちゃいろのごはん</a>
+        <a class="btn btn-rainbow" href="/">にじいろのごはん</a>
     </div>
 @endsection
