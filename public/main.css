@@ -42,7 +42,7 @@ div {
 img {
         border: none;
         width: 330px;
-		max-width: 30%;
+		max-width: 50%;
         display: block;
         margin: 0 auto;
         text-align:center;
@@ -293,6 +293,67 @@ input[type=radio]:checked + label {
 .dressup-img {
     z-index: 2;
     pointer-events: none;
+}
+
+/* 十字パッドのcss */
+.cross-layout {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    margin: 3em;
+}
+.cross-layout input[type="button"] {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 4em;
+    color: #ead7cb;
+    cursor: pointer;
+    border-radius: 90%;
+}
+.cross-layout input[type="button"]:hover {
+    color: #ccc;
+}
+.top-mark {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.left-mark {
+    display: block;
+    transform: rotate(-90deg);
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.center-mark {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.right-mark {
+    transform: rotate(90deg);
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    
+}
+.bottom-mark {
+    transform: rotate(180deg);
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+} 
+.cross-layout input.small-mark {
+    font-size: 3em;
+    font-weight: bolder;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    transform: translateY(-15px);
+}
+.cross-layout input.big-mark {
+    font-size: 3em;
+    font-weight: bolder;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    transform: translateY(-15px);
 }
 
 /* 画面が小さい時のcss */

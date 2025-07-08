@@ -23,8 +23,13 @@ Route::get('/egg', function () {
     ]);});
 Route::get('/fox', function () {
     return view('selections.yellow4', [
-        'image' => 'images/yellow5.png'
+        'image' => 'images/yellow4.png'
 ]);});
+Route::get('/dog', function () {
+    return view('selections.yellow5', [
+        'image' => 'images/yellow5.png'
+    ]);
+});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
         'image' => 'images/green1.png'
@@ -118,11 +123,6 @@ Route::get('/rabbit', function () {
 Route::get('/ryu', function () {
     return view('selections.gold1', [
         'image' => 'images/gold1.png'
-    ]);
-});
-Route::get('/dog', function () {
-    return view('selections.yellow5', [
-        'image' => 'yellow5.png'
     ]);
 });
 
