@@ -44,7 +44,7 @@
         var img;
         function ribbon() {
             const img = document.getElementById("dressupitem");
-            img.src = "/images/clothes/ribbon.png";
+            img.src = "/images/clothes/ribbon(pink).png";
         }
 
         function necktie() {
@@ -60,6 +60,11 @@
          function hat() {
             const img = document.getElementById("dressupitem");
             img.src = "/images/clothes/hat.png";
+        }
+
+         function ribbon() {
+            const img = document.getElementById("dressupitem");
+            img.src = "/images/clothes/ribbon(blue).png";
         }
 
         let item = document.getElementById("dressupitem");
