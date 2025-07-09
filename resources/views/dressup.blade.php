@@ -12,6 +12,7 @@
             <input type="radio" name="item" id="ribbon" onclick="ribbon()" checked><label for="ribbon" class="btn">リボン</label>
             <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
             <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
+            <input type="radio" name="item" id="crown" onclick="hat()"><label for="crown" class="btn">帽子</label>
         </div>
     </div>
 
@@ -53,6 +54,11 @@
         function crown() {
             const img = document.getElementById("dressupitem");
             img.src = "/images/clothes/crown.png";
+        }
+
+         function hat() {
+            const img = document.getElementById("dressupitem");
+            img.src = "/images/clothes/hat.png";
         }
 
         let item = document.getElementById("dressupitem");
