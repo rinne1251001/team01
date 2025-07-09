@@ -5,7 +5,7 @@
     <div class="dressup-left">
         <div class="dressup-container">
             <img class="animal-img" src="{{ asset($image) }}">
-            <img id="dressupitem" class="dressup-img" src="/images/clothes/hat.png" alt="着せ替えアイテム">
+            <img id="dressupitem" class="dressup-img" src="/images/clothes/ribbon.png" alt="着せ替えアイテム">
         </div>
 
         <div class="btn-group">
