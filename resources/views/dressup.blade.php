@@ -5,15 +5,7 @@
     <div class="dressup-left">
         <div class="dressup-container">
             <img class="animal-img" src="{{ asset($image) }}">
-            <img id="dressupitem" class="dressup-img" src="/images/clothes/ribbon(pink).png" alt="着せ替えアイテム">
-        </div>
-
-        <div class="btn-group">
-            <input type="radio" name="item" id="ribbon(pink)" onclick="ribbon()" checked><label for="ribbon(pink)" class="btn">ピンクリボン</label>
-            <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
-            <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
-            <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
-            <input type="radio" name="item" id="ribbon(blue)" onclick="ribbon()"><label for="ribbon(blue)" class="btn">ブルーリボン</label>
+            <img id="dressupitem" class="dressup-img" src="/images/clothes/ribbon1.png" alt="着せ替えアイテム">
         </div>
     </div>
 
@@ -27,7 +19,20 @@
             <input type="button" class="small-mark" onclick="shrink()" value="－">
             <input type="button" class="big-mark" onclick="grow()" value="＋">
         </div>
+    </div>
 
+    <div class="dressup-under">
+        <div class="btn-group">
+            <input type="radio" name="item" id="ribbon1" onclick="ribbon1()" checked><label for="ribbon1" class="btn">リボン①</label>
+            <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
+            <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
+            <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
+            <input type="radio" name="item" id="ribbon2" onclick="ribbon2()"><label for="ribbon2" class="btn">リボン②</label>
+            <input type="radio" name="item" id="ribbon2" onclick="ribbon2()"><label for="ribbon2" class="btn">リボン②</label>
+        </div>
+    </div>
+
+    <div class="dressup-underbtn">
         <div class="btn-group">
             <form id="canvasForm" action="{{ route('collections.create') }}" method="GET">
                 <input type="hidden" name="imageData" id="imageData">
@@ -42,9 +47,9 @@
 
     <script>
         var img;
-        function ribbon() {
+        function ribbon1() {
             const img = document.getElementById("dressupitem");
-            img.src = "/images/clothes/ribbon(pink).png";
+            img.src = "/images/clothes/ribbon1.png";
         }
 
         function necktie() {
@@ -62,9 +67,9 @@
             img.src = "/images/clothes/hat.png";
         }
 
-         function ribbon() {
+         function ribbon2() {
             const img = document.getElementById("dressupitem");
-            img.src = "/images/clothes/ribbon(blue).png";
+            img.src = "/images/clothes/ribbon2.png";
         }
 
         let item = document.getElementById("dressupitem");
