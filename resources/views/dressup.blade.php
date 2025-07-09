@@ -9,11 +9,11 @@
         </div>
 
         <div class="btn-group">
-            <input type="radio" name="item" id="ribbon(pink)" onclick="ribbon(pink)()" checked><label for="ribbon(pink)" class="btn">ピンクリボン</label>
+            <input type="radio" name="item" id="ribbon(pink)" onclick="ribbon()" checked><label for="ribbon(pink)" class="btn">ピンクリボン</label>
             <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
             <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
             <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
-            <input type="radio" name="item" id="ribbon(blue)" onclick="ribbon(blue)()"><label for="ribbon(blue)" class="btn">ブルーリボン</label>
+            <input type="radio" name="item" id="ribbon(blue)" onclick="ribbon()"><label for="ribbon(blue)" class="btn">ブルーリボン</label>
         </div>
     </div>
 
