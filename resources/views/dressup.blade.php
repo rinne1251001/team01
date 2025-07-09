@@ -31,7 +31,7 @@
                 <input type="hidden" name="imageData" id="imageData">
                 <button type="button" onclick="exportImage()" class="btn">ひろばにつれていく</button>
             </form>
-            <a href="{{ url()->previous() }}" class="btn">もどる</a>
+            <input type="button" class="btn" onclick="history.back()" value="もどる">
         </div>
     </div>
 </div>

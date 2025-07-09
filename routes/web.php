@@ -30,6 +30,11 @@ Route::get('/dog', function () {
         'image' => 'images/yellow5.png'
     ]);
 });
+Route::get('/cat', function () {
+    return view('selections.yellow6', [
+        'image' => 'images/yellow6.png'
+    ]);
+});
 Route::get('/tadpole', function () {
     return view('selections.green1', [
         'image' => 'images/green1.png'
@@ -116,8 +121,13 @@ Route::get('/dragon', function () {
     ]);
 });
 Route::get('/rabbit', function () {
-    return view('selections.white1', [
-        'image' => 'images/white1.png'
+    return view('selections.pink1', [
+        'image' => 'images/pink1.png'
+    ]);
+});
+Route::get('/piglet', function () {
+    return view('selections.pink2', [
+        'image' => 'images/pink2.png'
     ]);
 });
 Route::get('/ryu', function () {

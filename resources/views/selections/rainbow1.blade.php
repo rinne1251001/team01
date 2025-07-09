@@ -10,7 +10,7 @@
     <div><img src="/images/rainbow1.png" alt="なぞのたまご"></div>
     <div>
         <a class="btn btn-blue" href="/babydragon">あおいろのごはん</a>
-        <a class="btn btn-white" href="/rabbit">しろいろのごはん</a>
+        <a class="btn btn-pink" href="/rabbit">ピンクのごはん</a>
         <a class="btn btn-rainbow" href="/dokuchu">にじいろのごはん</a>
         <a class="btn btn-yellow" href="/dog">きいろのごはん</a>
     </div>

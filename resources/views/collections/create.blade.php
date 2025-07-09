@@ -26,7 +26,7 @@
         <div class="btn-group">
             <input type="submit" value="登録" class="btn">
             <input type="reset" value="クリア" class="btn">
-            <a href="{{ url()->previous() }}" class="btn">もどる</a>
+            <input type="button" class="btn" onclick="history.back()" value="もどる">
         </div>
     </form>
 </main>

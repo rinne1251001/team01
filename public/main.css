@@ -99,8 +99,8 @@ footer {
 .btn-blue:active{
     background: #748bdb;
 }
-.btn-white:active{
-    background: #f9f8f4;
+.btn-pink:active{
+    background: #f9d0c6;
 }
 .btn-gold:active{
     background: linear-gradient(to right ,#e6b422, #e6b422, #fff9e6, #e6b422);
