@@ -5,14 +5,15 @@
     <div class="dressup-left">
         <div class="dressup-container">
             <img class="animal-img" src="{{ asset($image) }}">
-            <img id="dressupitem" class="dressup-img" src="/images/clothes/ribbon.png" alt="着せ替えアイテム">
+            <img id="dressupitem" class="dressup-img" src="/images/clothes/ribbon(pink).png" alt="着せ替えアイテム">
         </div>
 
         <div class="btn-group">
-            <input type="radio" name="item" id="ribbon" onclick="ribbon()" checked><label for="ribbon" class="btn">リボン</label>
+            <input type="radio" name="item" id="ribbon(pink)" onclick="ribbon(pink)()" checked><label for="ribbon(pink)" class="btn">ピンクリボン</label>
             <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
             <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
             <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
+            <input type="radio" name="item" id="ribbon(blue)" onclick="ribbon(blue)()"><label for="ribbon(blue)" class="btn">ブルーリボン</label>
         </div>
     </div>
 
