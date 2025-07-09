@@ -12,7 +12,7 @@
             <input type="radio" name="item" id="ribbon" onclick="ribbon()" checked><label for="ribbon" class="btn">リボン</label>
             <input type="radio" name="item" id="necktie" onclick="necktie()"><label for="necktie" class="btn">ネクタイ</label>
             <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
-            <input type="radio" name="item" id="crown" onclick="hat()"><label for="crown" class="btn">帽子</label>
+            <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
         </div>
     </div>
 
