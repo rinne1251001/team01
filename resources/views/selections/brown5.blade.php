@@ -7,7 +7,7 @@
     </div>
 
     <div class="adult">成長！</div>
-    <div><img src="/images/broen5.png" alt="しか"></div>
+    <div><img src="/images/brown5.png" alt="しか"></div>
     <div>
         <a class="btn" href="/">さいしょにもどる</a>
     </div>
