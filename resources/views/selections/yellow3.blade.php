@@ -12,6 +12,6 @@
         <a class="btn btn-yellow" href="/chick">きいろのごはん</a>
         <a class="btn btn-orange" href="/brownegg">オレンジのごはん</a>
         <a class="btn btn-rainbow" href="/misterious">にじいろのごはん</a>
-        <a class="btn btn-brown" href="/beer">ちゃいろのごはん</a>
+        <a class="btn btn-brown" href="/deer">ちゃいろのごはん</a>
     </div>
 @endsection
