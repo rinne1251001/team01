@@ -13,14 +13,14 @@
         </li>
         <li>
             <a href="#collection" class="nav-item">
-                <img src="/images/img_1752128295.png">
+                <img src="/images/howtoplay/collection.png">
                 <div class="line"></div>
                 <span>ひろば</span>
             </a>
         </li>
         <li>
             <a href="#dressup" class="nav-item">
-                <img src="/images/img_1752128328.png">
+                <img src="/images/howtoplay/dressup.png">
                 <div class="line"></div>
                 <span>きせかえ</span>
             </a>
