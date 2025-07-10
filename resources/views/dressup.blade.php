@@ -28,7 +28,7 @@
             <input type="radio" name="item" id="crown" onclick="crown()"><label for="crown" class="btn">王冠</label>
             <input type="radio" name="item" id="hat" onclick="hat()"><label for="hat" class="btn">帽子</label>
             <input type="radio" name="item" id="ribbon2" onclick="ribbon2()"><label for="ribbon2" class="btn">リボン②</label>
-            <input type="radio" name="item" id="ribbon2" onclick="ribbon2()"><label for="ribbon2" class="btn">リボン②</label>
+            <input type="radio" name="item" id="ribbon2" onclick="ribbon2()"><label for="ribbon2" class="btn">リボン③</label>
         </div>
     </div>
 

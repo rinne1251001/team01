@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="/">そだてる</a></li>
                 <li><a href="/collections">ひろば</a></li>
+                <li><a href="/howtoplay">あそびかた</a></li>
             </ul>
         </nav>
     </header>

@@ -143,6 +143,9 @@ Route::get('/dressup', function (Request $request) {
     return view('dressup', compact('image'));
 })->name('dressup');
 
+//遊び方のルート
+Route::view('/howtoplay', 'howtoplay');
+
 // resources/views/collectionsのルート
 Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
 Route::get('/collections/create', [CollectionController::class, 'create'])->name('collections.create');
