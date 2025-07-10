@@ -11,5 +11,6 @@
     <div>
         <a class="btn btn-yellow" href="/egg">きいろのごはん</a>
         <a class="btn btn-green" href="/snake">みどりのごはん</a>
+        <a class="btn btn-blue" href="/turtle">あおいろのごはん</a>
     </div>
 @endsection

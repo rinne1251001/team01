@@ -44,7 +44,8 @@ class CollectionController extends Controller
         25 => 'pink1.png',
         26 => 'pink2.png',
         27 => 'gold1.png',
-        28 => 'white1.png'
+        28 => 'white1.png',
+        29 => 'red1.png'
         // 必要な分だけ追加
         ];
         return view('collections.index', [

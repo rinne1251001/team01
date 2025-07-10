@@ -140,8 +140,41 @@ Route::get('/deer', function () {
         'image' => 'images/brown5.png'
     ]);
 });
-
-
+Route::get('/bull', function () {
+    return view('selections.red1', [
+        'image' => 'images/red1.png'
+    ]);
+});
+Route::get('/wolf', function () {
+    return view('selections.gray1', [
+        'image' => 'images/gray1.png'
+    ]);
+});
+Route::get('/turtle', function () {
+    return view('selections.blue3', [
+        'image' => 'images/blue3.png'
+    ]);
+});
+Route::get('/kappa', function () {
+    return view('selections.blue4', [
+        'image' => 'images/blue4.png'
+    ]);
+});
+Route::get('/otagei', function () {
+    return view('selections.pink3', [
+        'image' => 'images/pink3.png'
+    ]);
+});
+Route::get('/lion', function () {
+    return view('selections.yellow7', [
+        'image' => 'images/yellow7.png'
+    ]);
+});
+Route::get('/simaenaga', function () {
+    return view('selections.white1', [
+        'image' => 'images/white1.png'
+    ]);
+});
 //着せ替え用のルート
 Route::get('/dressup', function (Request $request) {
     $image = $request->query('image', 'images/yellow1.png');

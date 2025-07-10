@@ -7,9 +7,8 @@
     </div>
 
     <div class="question">どのごはんをあげる？</div>
-    <div><img src="/images/yellow6.png" alt="ねこ"></div>
+    <div><img src="/images/blue3.png" alt="かめ"></div>
     <div>
-        <a class="btn btn-pink" href="/piglet">ピンクのごはん</a>
-        <a class="btn btn-yellow" href="/lion">きいろのごはん</a>
+        <a class="btn btn-blue" href="/kappa">あおいろのごはん</a>
     </div>
 @endsection
