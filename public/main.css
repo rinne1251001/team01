@@ -396,14 +396,45 @@ input[type=radio]:checked + label {
 /* 遊び方 */
 .howto {
     text-align: center;
+    margin: 6em 0;
+}
+.howto ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 4em;
 }
 .howto li {
-    display: inline-block;
-    margin: 6em;
     list-style: none;
 }
-.howto a {
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: #ead7cb;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.nav-item:hover {
+    transform: scale(1.2);
+}
+.nav-item img {
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: -1.8em;
+}
+.nav-item .line {
+    width: 100px;
+    height: 3px;
+    background-color: #ead7cb;
+    margin: 0.5em 0;
+}
+.nav-item span {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 section {
     margin: 6em;
@@ -412,14 +443,20 @@ h2 {
     text-align: center;
     background: rgba(113,105,101,0.4);
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 .howto-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 3em 0;
 }
 .howto-grid img {
-    width: 800px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
 
 /* 画面が小さい時のcss */
@@ -482,8 +519,11 @@ h2 {
         grid-row: 4 / 5;
     }
 
+    .howto ul {
+        gap: 0em;
+    }
     .howto-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

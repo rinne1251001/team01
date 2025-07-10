@@ -4,9 +4,27 @@
 
 <nav class="howto">
     <ul>
-        <li><a href="#breeding">そだてる</a></li>
-        <li><a href="#collection">ひろば</a></li>
-        <li><a href="#dressup">きせかえ</a></li>
+        <li>
+            <a href="#breeding" class="nav-item">
+                <img src="/images/yellow1.png">
+                <div class="line"></div>
+                <span>そだてる</span>
+            </a>
+        </li>
+        <li>
+            <a href="#collection" class="nav-item">
+                <img src="/images/img_1752128295.png">
+                <div class="line"></div>
+                <span>ひろば</span>
+            </a>
+        </li>
+        <li>
+            <a href="#dressup" class="nav-item">
+                <img src="/images/img_1752128328.png">
+                <div class="line"></div>
+                <span>きせかえ</span>
+            </a>
+        </li>
     </ul>
 </nav>
 
