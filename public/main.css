@@ -105,7 +105,12 @@ footer {
 .btn-gold:active{
     background: linear-gradient(to right ,#e6b422, #e6b422, #fff9e6, #e6b422);
 }
-
+.btn-red:active{
+    background: #721c24;
+}
+.btn-gray:active{
+    background: #777;
+}
 .btn-group-x {
     display: flex;
 }

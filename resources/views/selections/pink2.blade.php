@@ -10,5 +10,6 @@
     <div><img src="/images/pink2.png" alt="こぶた"></div>
     <div>
         <a class="btn btn-brown" href="/raccondog">ちゃいろのごはん</a>
+        <a class="btn btn-pink" href="/otagei">ピンクのごはん</a>
     </div>
 @endsection
