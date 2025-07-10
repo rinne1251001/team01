@@ -32,17 +32,18 @@ class CollectionController extends Controller
         13 => 'brown2.png',
         14 => 'brown3.png',
         15 => 'brown4.png',
-        16 => 'orange1.png',
-        17 => 'orange2.png',
-        18 => 'orange3.png',
-        19 => 'orange4.png',
-        20 => 'rainbow1.png',
-        21 => 'rainbow2.gif',
-        22 => 'blue1.png',
-        23 => 'blue2.png',
-        24 => 'pink1.png',
-        25 => 'pink2.png',
-        26 => 'gold1.png'
+        16 => 'brown5.png',
+        17 => 'orange1.png',
+        18 => 'orange2.png',
+        19 => 'orange3.png',
+        20 => 'orange4.png',
+        21 => 'rainbow1.png',
+        22 => 'rainbow2.gif',
+        23 => 'blue1.png',
+        24 => 'blue2.png',
+        25 => 'pink1.png',
+        26 => 'pink2.png',
+        27 => 'gold1.png'
         // 必要な分だけ追加
         ];
         return view('collections.index', [

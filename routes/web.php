@@ -135,6 +135,11 @@ Route::get('/ryu', function () {
         'image' => 'images/gold1.png'
     ]);
 });
+Route::get('/deer', function () {
+    return view('selections.brown5', [
+        'image' => 'images/brown5.png'
+    ]);
+});
 
 
 //着せ替え用のルート
