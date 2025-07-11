@@ -26,7 +26,7 @@
                 "/misterious",
                 "/dokuchu",
                 "/babydragon",
-                "/raccondog"
+                "/raccondog",
                 "/god"
             ];
 
