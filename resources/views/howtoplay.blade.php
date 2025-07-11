@@ -34,7 +34,7 @@
         <img src="/images/howtoplay/breeding.gif">
         <p>
             あげたいごはんを選んでキャラクターを育てよう<br>
-            キャラクターは全３２種類<br>
+            キャラクターは全３４種類<br>
             全部見つけられるかな？
         </p>
     </div>
