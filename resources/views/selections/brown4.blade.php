@@ -17,7 +17,7 @@
         <script>
         function randomClick() {
             document.querySelector('img').src = "/images/start.gif";
-            document.getElementById('question').textContent = "変身中...";
+            document.getElementById('question').textContent = "変化中...";
             document.getElementById('removing').style.display = "none";
             document.getElementById('removing2').style.display = "none";
 
@@ -27,7 +27,8 @@
                 "/misterious",
                 "/dokuchu",
                 "/babydragon",
-                "/fox"
+                "/fox",
+                "/god"
             ];
 
             setTimeout(() => {
