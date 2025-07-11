@@ -165,13 +165,11 @@ Route::get('/ryu', function () {
         'image' => 'images/gold1.png'
     ]);
 });
-<<<<<<< HEAD
 Route::get('/simaenaga', function () {
     return view('selections.white1', [
         'image' => 'images/white1.png'
     ]);
 });
-=======
 Route::get('/bull', function () {
     return view('selections.red1', [
         'image' => 'images/red1.png'
@@ -183,7 +181,6 @@ Route::get('/wolf', function () {
     ]);
 });
 
->>>>>>> 3652f0ca27ee45a292df2fe652e05ec7c7c9dbfc
 //着せ替え用のルート
 Route::get('/dressup', function (Request $request) {
     $image = $request->query('image', 'images/yellow1.png');
