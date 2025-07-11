@@ -23,31 +23,6 @@ class CollectionController extends Controller
         4 => 'yellow4.png',
         5 => 'yellow5.png',
         6 => 'yellow6.png',
-<<<<<<< HEAD
-        7 => 'green1.png',
-        8 => 'green2.png',
-        9 => 'green3.png',
-        10 => 'green4.png',
-        11 => 'green5.png',
-        12 => 'brown1.png',
-        13 => 'brown2.png',
-        14 => 'brown3.png',
-        15 => 'brown4.png',
-        16 => 'brown5.png',
-        17 => 'orange1.png',
-        18 => 'orange2.png',
-        19 => 'orange3.png',
-        20 => 'orange4.png',
-        21 => 'rainbow1.png',
-        22 => 'rainbow2.gif',
-        23 => 'blue1.png',
-        24 => 'blue2.png',
-        25 => 'pink1.png',
-        26 => 'pink2.png',
-        27 => 'gold1.png',
-        28 => 'white1.png',
-        29 => 'red1.png'
-=======
         7 => 'yellow7.png',
         8 => 'green1.png',
         9 => 'green2.png',
@@ -76,7 +51,7 @@ class CollectionController extends Controller
         32 => 'gold1.png',
         33 => 'red1.png',
         34 => 'gray1.png',
->>>>>>> 3652f0ca27ee45a292df2fe652e05ec7c7c9dbfc
+        35 => 'white1.png'
         // 必要な分だけ追加
         ];
         return view('collections.index', [
